@@ -52,19 +52,23 @@ def home_page():
 
     # TODO: Modify and adapt the following lines to your info, you can add or remove some details if you want
     st.write("""
-    - 🧑‍💻 I am a <Current Role and/or Studies> 
+    - 🧑‍💻 I am a Student at EAE Business School
 
-    - 🛩️ prev: <Previous Experience, Background or Studies>
+    - 🛩️ prev: Enthusiastic Business Analyst
 
-    - ❤️ <Your Passion and/or Interests>
+    - ❤️ Interest in business insights and data-driven decision making
 
-    - 🤖 <Your Personal Projects>
+    - 🤖 https://geisongelmetti.streamlit.app/
 
-    - 🏂 <Your Hobbies>
+    - 🏂 Passionate to travel and discover the world
 
-    - 📫 How to reach me: <Your Email>
+    - 📫 How to reach me: ggelmetti@outlook.com
+             
+    - 📫 Likedin: linkedin.com/in/geison-gelmetti-15413332
+             
+    -  Instagram: @gelmettigeison
 
-    - 🏠 Barcelona
+    - 🏠 Barcelona, Spain
     """)
 
     # Feel free to add other points like your Linkedin, Github, Social Media, etc.
