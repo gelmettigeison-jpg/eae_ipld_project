@@ -54,19 +54,19 @@ def home_page():
     st.write("""
     - 🧑‍💻 I am a Student at EAE Business School
 
-    - 🛩️ prev: Enthusiastic Business Analyst
+    - 🛩️ Enthusiastic Business Analyst
 
     - ❤️ Interest in business insights and data-driven decision making
 
-    - 🤖 https://geisongelmetti.streamlit.app/
+    - 🤖 https://github.com/gelmettigeison-jpg
 
     - 🏂 Passionate to travel and discover the world
 
     - 📫 How to reach me: ggelmetti@outlook.com
              
-    - 📫 Likedin: linkedin.com/in/geison-gelmetti-15413332
+    - 📫 Likedin: http://linkedin.com/in/geison-gelmetti-15413332
              
-    -  Instagram: @gelmettigeison
+    - 📫 Instagram: @gelmettigeison
 
     - 🏠 Barcelona, Spain
     """)
