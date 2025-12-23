@@ -71,7 +71,29 @@ cols1[4].metric("Avg Title Length", str(round(avg_title_length, 2)) if avg_title
 
 
 # ----- Pie Chart: Top year producer countries -----
-    
+
+st.write("##")
+st.header("Top Year Producer Countries")
+
+cols2 = st.columns(2)
+year = cols2[0].number_input("Select a year:", min_year, max_year, 2005)
+
+# TODO: Ex 2.6: For a given year, get the Pandas Series of how many movies and series 
+# combined were made by every country, limit it to the top 10 countries.
+year = cols2[0].number_input("Select a year:", min_year, max_year, 2005)   # you can try to change the year to see the results for different years 
+
+df_year = movies_df.loc[movies_df["release_year"] == year]
+
+top_10_countries = df_year["country"].value_counts().head(10)
+
+
+# print(top_10_countries)
+if top_10_countries is not None:
+    fig = plt.figure(figsize=(8, 8))
+    plt.pie(top_10_countries, labels=top_10_countries.index, autopct="%.2f%%")
+    plt.title(f"Top 10 Countries in {year}")
+
+    st.pyplot(fig)
 
 else:
     st.subheader("⚠️ You still need to develop the Ex 2.6.")
