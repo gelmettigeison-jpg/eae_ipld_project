@@ -80,7 +80,7 @@ year = cols2[0].number_input("Select a year:", min_year, max_year, 2005)
 
 # TODO: Ex 2.6: For a given year, get the Pandas Series of how many movies and series 
 # combined were made by every country, limit it to the top 10 countries.
-year = cols2[0].number_input("Select a year:", min_year, max_year, 2005)   # you can try to change the year to see the results for different years 
+year = 2005   # you can try to change the year to see the results for different years 
 
 df_year = movies_df.loc[movies_df["release_year"] == year]
 
@@ -114,7 +114,7 @@ movies_avg_duration_per_year = movies_only.groupby("release_year")["duration_min
 if movies_avg_duration_per_year is not None:
     fig = plt.figure(figsize=(9, 6))
 
-    plt.plot(movies_avg_duration_per_year.index, movies_avg_duration_per_year.values)  # TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
+    # plt.plot(...# TODO: generate the line plot using plt.plot() and the information from movies_avg_duration_per_year (the vertical axes with the minutes value) and its index (the horizontal axes with the years)
 
     plt.title("Average Duration of Movies Across Years")
 
