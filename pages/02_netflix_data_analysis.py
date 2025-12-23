@@ -76,11 +76,12 @@ st.write("##")
 st.header("Top Year Producer Countries")
 
 cols2 = st.columns(2)
-year = cols2[0].number_input("Select a year:", min_year, max_year, 2005)
+year = cols2[0].number_input( "Select a year:", min_value=int(min_year), max_value=int(max_year), value=2005, step=1 ) 
+year = int(year)
 
 # TODO: Ex 2.6: For a given year, get the Pandas Series of how many movies and series 
 # combined were made by every country, limit it to the top 10 countries.
-year = 2005   # you can try to change the year to see the results for different years 
+# you can try to change the year to see the results for different years 
 
 df_year = movies_df.loc[movies_df["release_year"] == year]
 
