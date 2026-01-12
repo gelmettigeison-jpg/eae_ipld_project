@@ -24,7 +24,7 @@ img = st.file_uploader("Upload an image:", type=["png", "jpg", "jpeg"])
 
 if img is None:
     is_example = True
-    with Image.open("data/starry_night.png") as img:
+    with Image.open("Life_pic.png") as img:
         img_arr = np.array(img)
 else:
     with Image.open(img) as img:
